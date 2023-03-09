@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <!--Data item that holds the reminder details-->
+        <variable
+            name="reminderDataItem"
+            type="com.othman.locationReminder.locationreminders.reminderslist.ReminderDataItem" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".locationreminders.ReminderDescriptionActivity">
+        <!--TO DO: add the design of the reminder details-->
+
+        <ImageView
+            android:id="@+id/map_img"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#303030"
+            android:contentDescription="@string/map_img"
+            android:src="@drawable/map"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/title"
+            android:textColor="#000"
+            android:textSize="21sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/map_img" />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:textColor="#505050"
+            android:text="@{reminderDataItem.title}"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/title_text"
+            app:layout_constraintTop_toBottomOf="@id/title_text"
+            tools:text="@tools:sample/lorem" />
+
+        <TextView
+            android:id="@+id/location_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Location:"
+            android:textColor="#000"
+            android:textSize="21sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:textColor="#505050"
+            android:text="@{reminderDataItem.location}"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/location_text"
+            app:layout_constraintTop_toBottomOf="@id/location_text"
+            tools:text="@tools:sample/lorem" />
+
+        <TextView
+            android:id="@+id/description_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Description:"
+            android:textColor="#000"
+            android:textSize="21sp"
+            app:layout_constraintStart_toStartOf="@id/title_text"
+            app:layout_constraintTop_toBottomOf="@id/location" />
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="@{reminderDataItem.description}"
+            android:textColor="#505050"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/description_text"
+            app:layout_constraintTop_toBottomOf="@id/description_text"
+            tools:maxLines="4"
+            tools:text="@tools:sample/lorem/random" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

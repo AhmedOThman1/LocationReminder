@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "961780386676",
+    "project_id": "location-reminder-c2541",
+    "storage_bucket": "location-reminder-c2541.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961780386676:android:c2a8a6ca1ada0616e93a21",
+        "android_client_info": {
+          "package_name": "com.othman.locationReminder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "961780386676-7brs3f9dnleplqj5mibngb52tk63av0r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeRddEXDD-OoLLkQFXiJZ6MRJ-a56tc_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "961780386676-7brs3f9dnleplqj5mibngb52tk63av0r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
