@@ -87,6 +87,20 @@
             </AndroidTestResultsTableState>
           </value>
         </entry>
+        <entry key="1960108270">
+          <value>
+            <AndroidTestResultsTableState>
+              <option name="preferredColumnWidths">
+                <map>
+                  <entry key="192.168.1.44:5555" value="120" />
+                  <entry key="Duration" value="90" />
+                  <entry key="HUAWEI&#10; DUB-LX1" value="120" />
+                  <entry key="Tests" value="360" />
+                </map>
+              </option>
+            </AndroidTestResultsTableState>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
